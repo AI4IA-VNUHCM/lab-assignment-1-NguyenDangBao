@@ -26,6 +26,28 @@ int main(int argc, char *argv[]) {
 			testcase[i] = atoi(argv[i+1]);
 	}
 	//Your codes here
-
+int main(); {
+        double min == 0;
+        double max == 0;
+    float n; 
+    int count = 0;
+    do {
+        scanf(%f, &n);
+        if(n < 0.001){
+            break;
+            }
+            if( count ){
+                if( n > max ){
+                    max = n;
+                }else if( n < min ){
+                    min = n;
+                }
+            }else {
+                max = n;
+                min = n;
+                count = 1;
+            }
+    }while ( n > 0);
+     printf("Min is: %.4f Max is: %.4f\n", min, max);
 	return 0;
 }
